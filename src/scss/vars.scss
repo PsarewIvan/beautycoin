@@ -19,11 +19,18 @@ $smallphone: 'screen and (max-width: 340px)';
 $main-font: 'Inter', 'Helvetica', sans-serif;
 
 $background-primary: rgba(255, 255, 255, 1);
-$background-secondary: rgba(245, 245, 245, 1);
 $darkner-4: rgba(0, 0, 0, 0.04);
 $darkner-8: rgba(0, 0, 0, 0.08);
 $darkner-16: rgba(0, 0, 0, 0.16);
 $darkner-24: rgba(0, 0, 0, 0.24);
+$accent-500: #d8598c;
+$text-primary: #2f2227;
+$text-primary-invert: #fff;
+$text-secondary: rgba(47, 34, 39, 0.8);
+$text-secondary-invert: rgba(255, 255, 255, 0.72);
+$text-third: rgba(47, 34, 39, 0.56);
+
+$background-secondary: rgba(245, 245, 245, 1);
 
 $red-100: rgba(252, 221, 220, 1);
 $red-200: rgba(249, 187, 185, 1);
@@ -39,8 +46,3 @@ $link-600: rgba(17, 109, 179, 1);
 $green-100: rgba(214, 236, 222, 1);
 $green-500: rgba(50, 159, 91, 1);
 $green-600: rgba(40, 127, 73, 1);
-
-$text-primary: rgba(41, 41, 41, 1);
-$text-primary-invert: rgba(255, 255, 255, 0.92);
-$text-secondary: rgba(41, 41, 41, 0.8);
-$text-third: rgba(41, 41, 41, 0.56);

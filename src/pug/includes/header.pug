@@ -1,19 +1,17 @@
 block header
     include ../components/button.pug
 
-    - var headerClass = page === 'integration' ? 'header_integration' : ''
-
     header.header(class=headerClass)
         .header__content
             a.header__logo(href='/')
-                img.header__logo-img(src='img/logo.svg')
+                img.header__logo-img(src='img/logo.png')
             if page != 'integration'
                 ul.header__links
                     li
-                        a.header__link(href='#data') Данные
+                        a.header__link(href='#spend') Где потратить?
                     li
-                        a.header__link(href='#question') Вопросы и ответы
+                        a.header__link(href='#get') Как получить?
                     li
-                        a.header__link(href='#tariff') Тарифы
+                        a.header__link(href='#questions') Вопросы и ответы
                 .header__login
-                    +button({text: 'Войти', theme: 'secondary', size: 'l', className: 'js-auth-button'})
+                    +button({text: 'Войти', theme: 'secondary', className: 'js-auth-button'})

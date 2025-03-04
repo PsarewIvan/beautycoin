@@ -1,19 +1,21 @@
 block footer
     include ../components/button.pug
+    include ../components/text-input.pug
 
     footer.footer
         .footer__content
             .footer__block
                 a.footer__logo(href="/")
-                    img.footer__logo-img(src="img/logo-black.svg")
-                .footer__copyright © 2025, Все права защищены
-            .footer__block
+                    img.footer__logo-img(src="img/logo-black.png")
                 ul.footer__links
                     li.footer__links-element
-                        a.footer__link(href="") Блог
+                        a.footer__link(href="") Пользовательское соглашение
                     li.footer__links-element
-                        a.footer__link(href="agreement") Пользовательское соглашение
-                    li.footer__links-element
-                        a.footer__link(href="details") Реквизиты
-                    li.footer__links-element
-                        a.footer__link.js-support-button Остались вопросы? Свяжитесь с нами
+                        a.footer__link(href="agreement") Остались вопросы? Свяжитесь с нами
+                .footer__copyright © 2025, Все права защищены
+            .footer__block
+                .footer__text Хотите быть в курсе всех акций и спецпредложений участников Beautycoin? 
+                    b Подпишитесь!
+                .footer__form
+                    +text-input({placeholder: 'Ваш email', subText: 'Вы в любой момент можете отказаться от рассылки, нажав «Отказаться от рассылки» внизу письма'})
+                    +button({text: 'Подписаться', theme: 'primary'})
