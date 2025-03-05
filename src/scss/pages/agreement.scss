@@ -54,9 +54,110 @@
             counter-increment: section;
 
             &::before {
-                content: '1.' counter(section);
+                // content: '1.' counter(section);
                 position: absolute;
                 left: 0;
+            }
+        }
+
+        &.number-1 {
+            li::before {
+                content: '1.' counter(section);
+            }
+        }
+        &.number-2 {
+            li::before {
+                content: '2.' counter(section);
+            }
+        }
+        &.number-3 {
+            li::before {
+                content: '3.' counter(section);
+            }
+        }
+        &.number-4 {
+            li::before {
+                content: '4.' counter(section);
+            }
+        }
+        &.number-5 {
+            li::before {
+                content: '5.' counter(section);
+            }
+        }
+        &.number-6 {
+            li::before {
+                content: '6.' counter(section);
+            }
+        }
+        &.number-7 {
+            li::before {
+                content: '7.' counter(section);
+            }
+        }
+        &.number-8 {
+            li::before {
+                content: '8.' counter(section);
+            }
+        }
+        &.number-9 {
+            li::before {
+                content: '9.' counter(section);
+            }
+        }
+        &.number-10 {
+            li::before {
+                content: '10.' counter(section);
+            }
+        }
+        &.number-11 {
+            li::before {
+                content: '11.' counter(section);
+            }
+        }
+        &.number-12 {
+            li::before {
+                content: '12.' counter(section);
+            }
+        }
+        &.number-13 {
+            li::before {
+                content: '13.' counter(section);
+            }
+        }
+        &.number-14 {
+            li::before {
+                content: '14.' counter(section);
+            }
+        }
+        &.number-15 {
+            li::before {
+                content: '15.' counter(section);
+            }
+        }
+        &.number-16 {
+            li::before {
+                content: '16.' counter(section);
+            }
+        }
+        &.number-17 {
+            li::before {
+                content: '17.' counter(section);
+            }
+        }
+        &.number-18 {
+            li::before {
+                content: '18.' counter(section);
+            }
+        }
+        &.number-19 {
+            li::before {
+                content: '19.' counter(section);
+            }
+        }
+        &.number-20 {
+            li::before {
+                content: '20.' counter(section);
             }
         }
     }
