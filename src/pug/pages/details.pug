@@ -1,0 +1,48 @@
+extends ../layout.pug
+
+block variables
+    - var hasLogin = 'true'
+
+block content
+    include ../components/button.pug
+
+    main.main.gradient
+        section.details
+            h1.details__title Реквизиты
+            .details-table
+                .details-table__header ООО «Салон онлайн»
+                .details-table__list
+                    .details-table__element
+                        .details-table__element-text Адрес
+                        .details-table__element-text 115230, Москва, Хлебозаводский пр-д, д. 7, стр.9, пом. VIII, ком. 12
+                    .details-table__element
+                        .details-table__element-text ОГРН
+                        .details-table__element-text 1117746901612
+                    .details-table__element
+                        .details-table__element-text ИНН
+                        .details-table__element-text 7724811373
+                    .details-table__element
+                        .details-table__element-text КПП
+                        .details-table__element-text 772401001
+                    .details-table__element
+                        .details-table__element-text Расчетный счет
+                        .details-table__element-text 40702 81013 80500 19538
+                    .details-table__element
+                        .details-table__element-text Банк
+                        .details-table__element-text в Московский банк ПАО «Сбербанк России»
+                    .details-table__element
+                        .details-table__element-text Корреспонденсткий счет
+                        .details-table__element-text 30101 81040 00000 00225
+                    .details-table__element
+                        .details-table__element-text БИК
+                        .details-table__element-text 044525225
+                    .details-table__element
+                        .details-table__element-text Телефон
+                        .details-table__element-text 8 (800) 302-32-09
+                    .details-table__element
+                        .details-table__element-text Электронная почта
+                        .details-table__element-text
+                            a(href="mailto:info@sonline.su") info@sonline.su
+                    .details-table__element
+                        .details-table__element-text Генеральный директор
+                        .details-table__element-text Борисова Светлана Александровна

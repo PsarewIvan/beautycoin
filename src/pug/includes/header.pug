@@ -1,6 +1,10 @@
 block header
     include ../components/button.pug
 
+    - var spendLink = page === 'index' ? '#spend' : '/#spend'
+    - var getLink = page === 'index' ? '#get' : '/#get'
+    - var questionLink = page === 'index' ? '#questions' : '/#questions'
+
     header.header(class=headerClass)
         .header__content
             a.header__logo(href='/')
@@ -8,10 +12,10 @@ block header
             if page != 'integration'
                 ul.header__links
                     li
-                        a.header__link(href='#spend') Где потратить?
+                        a.header__link(href=spendLink) Где потратить?
                     li
-                        a.header__link(href='#get') Как получить?
+                        a.header__link(href=getLink) Как получить?
                     li
-                        a.header__link(href='#questions') Вопросы и ответы
+                        a.header__link(href=questionLink) Вопросы и ответы
                 .header__login
                     +button({text: 'Войти', theme: 'secondary', className: 'js-auth-button'})

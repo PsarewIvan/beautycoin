@@ -11,6 +11,8 @@
 @use './components/card-low.scss';
 
 @use './pages/index.scss';
+@use './pages/agreement.scss';
+@use './pages/details.scss';
 
 * {
     box-sizing: border-box;
@@ -46,6 +48,10 @@ body {
     @include vars.mobile {
         margin-top: 80px;
     }
+}
+
+.gradient {
+    background: linear-gradient(180deg, #fff 50%, #f9f1f0 100%);
 }
 
 .title1 {
