@@ -49,6 +49,12 @@
         gap: 20px;
     }
 
+    &__item-number {
+        @include vars.mobile {
+            display: none;
+        }
+    }
+
     &__header-icon-wrapper {
         align-self: flex-start;
         flex-shrink: 0;
