@@ -21,6 +21,11 @@
         width: 200px;
         height: 40px;
         object-fit: contain;
+
+        @include vars.mobile {
+            width: 160px;
+            height: 32px;
+        }
     }
 
     &__content {
@@ -32,6 +37,10 @@
         height: 100%;
         margin: 0 auto;
         padding: 0 24px;
+
+        @include vars.mobile {
+            padding: 0 16px;
+        }
     }
 
     &__links {
@@ -39,6 +48,10 @@
         padding: 0;
         margin: 0;
         list-style: none;
+
+        @include vars.tablet {
+            display: none;
+        }
     }
 
     &__link {

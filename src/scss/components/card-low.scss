@@ -9,6 +9,10 @@
     border-radius: 24px;
     background-color: vars.$background-primary;
 
+    @include vars.mobile {
+        width: 240px !important;
+    }
+
     &__img {
         width: 64px;
         height: 64px;

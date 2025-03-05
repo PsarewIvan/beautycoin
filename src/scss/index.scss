@@ -57,6 +57,13 @@ body {
     line-height: 58px;
     letter-spacing: -1.92px;
     color: vars.$text-primary-invert;
+
+    @include vars.mobile {
+        font-size: 32px;
+        line-height: 44px;
+        letter-spacing: -0.96px;
+        text-align: left;
+    }
 }
 
 .title2 {
@@ -65,6 +72,10 @@ body {
     font-weight: 400;
     line-height: 44px;
     letter-spacing: -0.96px;
+
+    @include vars.mobile {
+        margin: 0 16px;
+    }
 }
 
 .title3 {
@@ -84,6 +95,16 @@ body {
     padding-top: 64px;
     padding-bottom: 64px;
 
+    @include vars.tablet {
+        padding: 0 24px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    @include vars.mobile {
+        padding: 32px 0;
+    }
+
     &_start {
         background: linear-gradient(180deg, #fff 50%, #f9f1f0 100%);
     }
@@ -94,10 +115,6 @@ body {
 
     &_end {
         background: linear-gradient(0deg, #fff 50%, #f9f1f0 100%);
-    }
-
-    @include vars.mobile {
-        padding: 0 16px;
     }
 }
 

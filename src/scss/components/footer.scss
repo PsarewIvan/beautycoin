@@ -17,15 +17,13 @@
         padding: 64px 24px;
 
         @include vars.tablet {
-            gap: 24px;
-            padding: 24px;
+            padding: 32px 24px;
         }
 
         @include vars.mobile {
             display: flex;
             flex-direction: column;
-            gap: 12px;
-            padding: 16px;
+            padding: 32px 16px;
         }
     }
 
@@ -33,10 +31,6 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
-
-        @include vars.tablet {
-            padding: 16px 0;
-        }
     }
 
     &__logo {
@@ -69,8 +63,12 @@
     &__links-element {
         position: relative;
         display: flex;
-        align-items: center;
+        align-items: baseline;
         padding-left: 36px;
+
+        @include vars.tablet {
+            padding-left: 24px;
+        }
 
         &::after {
             position: absolute;
@@ -81,6 +79,11 @@
             height: 2px;
             border-radius: 10px;
             background-color: vars.$accent-500;
+
+            @include vars.tablet {
+                top: 11px;
+                width: 16px;
+            }
         }
     }
 
@@ -88,17 +91,31 @@
         color: vars.$text-primary-invert;
         text-decoration: none;
         cursor: pointer;
+
+        @include vars.tablet {
+            font-size: 16px;
+            line-height: 24px;
+        }
     }
 
     &__text {
         font-size: 20px;
         line-height: 32px;
         color: vars.$text-primary-invert;
+
+        @include vars.tablet {
+            font-size: 16px;
+            line-height: 24px;
+        }
     }
 
     &__form {
         display: flex;
         gap: 16px;
         align-items: flex-start;
+
+        @include vars.tablet {
+            flex-direction: column;
+        }
     }
 }

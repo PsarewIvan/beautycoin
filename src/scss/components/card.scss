@@ -5,6 +5,10 @@
     flex-direction: column;
     gap: 12px;
 
+    @include vars.mobile {
+        width: 240px !important;
+    }
+
     &__img {
         aspect-ratio: 4 / 3;
         object-fit: contain;
