@@ -7,23 +7,9 @@
 
     &__item {
         padding: 32px;
-        border-radius: 2px;
-
-        &:nth-child(5n + 1) {
-            background-color: #feeeed;
-        }
-        &:nth-child(5n + 2) {
-            background-color: #fcdddc;
-        }
-        &:nth-child(5n + 3) {
-            background-color: #fbccca;
-        }
-        &:nth-child(5n + 4) {
-            background-color: #f9bbb9;
-        }
-        &:nth-child(5n + 5) {
-            background-color: #f8aaa7;
-        }
+        border-radius: 24px;
+        background-color: vars.$accent-50;
+        transition: background-color 0.2s;
 
         @include vars.mobile {
             padding: 24px;
@@ -32,6 +18,11 @@
         @include vars.mobile {
             padding: 16px;
         }
+
+        &_show,
+        &_slidedown {
+            background-color: vars.$accent-100;
+        }
     }
 
     &__header {
@@ -39,8 +30,9 @@
         justify-content: space-between;
         gap: 32px;
         font-size: 24px;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 32px;
+        letter-spacing: -0.48px;
         cursor: pointer;
         transition: all 0.2s;
 
@@ -53,7 +45,7 @@
 
     &__header-text {
         display: flex;
-        align-items: baseline;
+        align-items: center;
         gap: 20px;
     }
 
@@ -64,14 +56,14 @@
     }
 
     &__header-icon-wrapper {
-        align-self: center;
+        align-self: flex-start;
         flex-shrink: 0;
         width: 48px;
         height: 48px;
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 2px;
+        border-radius: 50%;
         transition: all 0.2s;
 
         @include vars.mobile {
@@ -117,13 +109,21 @@
     }
 }
 
-.accordion__header:hover {
-    .accordion__header-icon-wrapper {
-        background-color: rgba(0, 0, 0, 0.04);
+.accordion__header {
+    &:hover {
+        .accordion__header-icon-wrapper {
+            background-color: vars.$accent-100;
+        }
     }
 
-    .accordion__icon {
-        color: vars.$red-500;
+    &:active {
+        .accordion__header-icon-wrapper {
+            background-color: vars.$accent-500;
+        }
+
+        .accordion__icon {
+            color: vars.$text-primary-invert;
+        }
     }
 }
 
@@ -132,6 +132,7 @@
     flex-direction: column;
     gap: 4px;
     margin-top: 20px;
+    margin-left: 44px;
     margin-right: 56px;
 
     @include vars.mobile {
@@ -161,9 +162,9 @@
                 top: 50%;
                 transform: translateY(-50%);
                 width: 24px;
-                height: 4px;
-                border-radius: 20px;
-                background-color: vars.$red-500;
+                height: 2px;
+                border-radius: 2px;
+                background-color: vars.$accent-500;
 
                 @include vars.mobile {
                     width: 16px;

@@ -1,0 +1,53 @@
+@use '../vars.scss';
+
+.card-low {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-height: 250px;
+    padding: 16px 16px 24px;
+    border-radius: 24px;
+    background-color: vars.$background-primary;
+
+    &__img {
+        width: 64px;
+        height: 64px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 32px;
+        letter-spacing: -0.2px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &__block {
+        display: flex;
+        gap: 4px;
+        margin-top: auto;
+    }
+
+    &__discount {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 32px;
+        letter-spacing: -0.48px;
+    }
+
+    &__discount-img {
+        flex-shrink: 1;
+        width: 32px;
+        height: 32px;
+    }
+}

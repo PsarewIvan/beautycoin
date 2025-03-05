@@ -1,0 +1,12 @@
+mixin card-low({text, title, discount, icon, className})
+    .card-low(class=className)
+        img.card-low__img(src=icon)
+        .card-low__content
+            .card-low__title
+                = title
+            .card-low__text
+                = text
+        .card-low__block
+            .card-low__discount
+                = discount
+            img.card-low__discount-img(src="img/beautycoin.svg")

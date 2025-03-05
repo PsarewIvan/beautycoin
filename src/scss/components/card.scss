@@ -1,0 +1,44 @@
+@use '../vars.scss';
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    &__img {
+        aspect-ratio: 4 / 3;
+        object-fit: contain;
+        width: 100%;
+        border-radius: 24px;
+    }
+
+    &__block {
+        display: flex;
+        gap: 8px;
+        padding: 0 8px 16px;
+    }
+
+    &__icon {
+        flex-shrink: 1;
+        width: 48px;
+        height: 48px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        margin-top: 12px;
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

@@ -10,6 +10,7 @@
         margin-left: 2px;
         font-size: 14px;
         line-height: 20px;
+        color: vars.$text-secondary;
     }
 
     &__input {
@@ -35,6 +36,7 @@
 
         &:focus {
             outline: none;
+            border-color: vars.$link-300;
         }
 
         &:disabled {
@@ -43,11 +45,11 @@
         }
 
         &.error {
-            border-color: vars.$red-500;
+            border-color: vars.$error-500;
         }
 
         &_force-alert {
-            border-color: vars.$red-500;
+            border-color: vars.$error-500;
         }
     }
 
@@ -99,7 +101,7 @@
     &__alert {
         display: none;
         margin-top: 4px;
-        color: vars.$red-500;
+        color: vars.$error-500;
         font-size: 14px;
         line-height: 20px;
 
@@ -124,7 +126,7 @@
 
     &__force-alert {
         margin-top: 4px;
-        color: vars.$red-500;
+        color: vars.$error-500;
         font-size: 14px;
         line-height: 20px;
     }

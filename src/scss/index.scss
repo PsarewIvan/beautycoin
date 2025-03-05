@@ -7,6 +7,8 @@
 @use './components/accordion.scss';
 @use './components/button.scss';
 @use './components/text-input.scss';
+@use './components/card.scss';
+@use './components/card-low.scss';
 
 @use './pages/index.scss';
 
@@ -28,7 +30,6 @@ body {
     font-weight: 400;
     font-family: vars.$main-font;
     color: vars.$text-primary;
-    background-color: vars.$background-primary;
 
     @include vars.mobile {
         font-size: 16px;
@@ -47,12 +48,53 @@ body {
     }
 }
 
+.title1 {
+    max-width: 1152px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    letter-spacing: -1.92px;
+    color: vars.$text-primary-invert;
+}
+
+.title2 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: -0.96px;
+}
+
+.title3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.48px;
+}
+
 .section {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    max-width: 1200px;
-    padding: 64px 24px;
+    width: 100%;
+    padding: calc((100vw - 1152px) / 2);
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    &_start {
+        background: linear-gradient(180deg, #fff 50%, #f9f1f0 100%);
+    }
+
+    &_center {
+        background-color: vars.$background-secondary;
+    }
+
+    &_end {
+        background: linear-gradient(0deg, #fff 50%, #f9f1f0 100%);
+    }
 
     @include vars.mobile {
         padding: 0 16px;

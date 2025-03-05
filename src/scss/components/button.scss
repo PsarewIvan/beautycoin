@@ -22,8 +22,13 @@
         color: vars.$text-primary-invert;
 
         &:hover:not(:disabled) {
-            // border-color: vars.$red-700;
-            // background-color: vars.$red-700;
+            border-color: vars.$accent-600;
+            background-color: vars.$accent-600;
+        }
+
+        &:active:not(:disabled) {
+            border-color: vars.$accent-700;
+            background-color: vars.$accent-700;
         }
 
         &:disabled {
@@ -37,7 +42,14 @@
         color: vars.$text-primary;
 
         &:hover:not(:disabled) {
-            // background-color: vars.$red-100;
+            border-color: vars.$accent-500;
+            background-color: vars.$accent-100;
+        }
+
+        &:active:not(:disabled) {
+            border-color: vars.$accent-700;
+            background-color: vars.$accent-700;
+            color: vars.$text-primary-invert;
         }
 
         &:disabled {
