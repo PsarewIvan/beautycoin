@@ -5,6 +5,10 @@
     flex-direction: column;
     gap: 2px;
 
+    @include vars.mobile {
+        margin: 0 16px;
+    }
+
     &__item {
         padding: 32px;
         border-radius: 24px;
