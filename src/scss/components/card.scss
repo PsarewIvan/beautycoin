@@ -11,15 +11,26 @@
 
     &__img {
         aspect-ratio: 4 / 3;
-        object-fit: contain;
+        object-fit: cover;
         width: 100%;
         border-radius: 24px;
+    }
+
+    &__section {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 0 8px 16px;
     }
 
     &__block {
         display: flex;
         gap: 8px;
-        padding: 0 8px 16px;
+    }
+
+    &__description {
+        font-size: 16px;
+        line-height: 24px;
     }
 
     &__icon {

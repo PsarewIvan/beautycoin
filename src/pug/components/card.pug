@@ -1,10 +1,14 @@
-mixin card({text, title, img, icon, className})
+mixin card({text, description, title, img, icon, className})
     .card(class=className)
         img.card__img(src=img)
-        .card__block
-            img.card__icon(src=icon)
-            .card__content
-                .card__title
-                    = title
-                .card__text
-                    = text
+        .card__section
+            .card__block
+                img.card__icon(src=icon)
+                .card__content
+                    .card__title
+                        = title
+                    .card__text
+                        = text
+            if description
+                .card__description
+                    = description
