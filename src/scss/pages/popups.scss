@@ -19,11 +19,12 @@
         padding: 32px 24px 88px;
 
         @include vars.tablet {
-            padding: 32px 24px;
+            justify-content: center;
+            padding: 32px 24px 120px;
         }
 
         @include vars.mobile {
-            padding: 32px 16px;
+            padding: 0 0 144px;
         }
     }
 
@@ -32,6 +33,10 @@
         flex-direction: column;
         justify-content: center;
         gap: 48px;
+
+        @include vars.tablet {
+            display: none;
+        }
     }
 
     &__logo {
@@ -63,6 +68,24 @@
     max-width: 544px;
     width: 100%;
     background-color: vars.$background-primary;
+
+    @include vars.mobile {
+        padding: 24px 16px 32px;
+    }
+
+    &__logo {
+        display: none;
+
+        img {
+            width: 100%;
+        }
+
+        @include vars.tablet {
+            display: flex;
+            width: 192px;
+            height: 32px;
+        }
+    }
 
     &__titles {
         display: flex;

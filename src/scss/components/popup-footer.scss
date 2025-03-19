@@ -6,8 +6,17 @@
     right: 0;
     bottom: 0;
     min-height: 56px;
+    display: flex;
     padding: 16px 0;
     background-color: vars.$text-primary;
+
+    @include vars.mobile {
+        padding: 16px;
+    }
+
+    @include vars.mobile {
+        min-height: 144px;
+    }
 
     &__content {
         display: flex;
@@ -17,6 +26,18 @@
         max-width: 1200px;
         padding: 0 24px;
         margin: 0 auto;
+
+        @include vars.tablet {
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 8px;
+        }
+
+        @include vars.mobile {
+            padding: 0;
+            align-items: flex-start;
+            // height: 100%;
+        }
     }
 
     &__copyright {
@@ -24,6 +45,10 @@
         font-weight: 400;
         line-height: 24px;
         color: vars.$text-secondary-invert;
+
+        @include vars.mobile {
+            margin-top: auto;
+        }
     }
 
     &__links {
@@ -33,6 +58,11 @@
         padding: 0;
         margin: 0;
         list-style: none;
+
+        @include vars.mobile {
+            flex-direction: column;
+            gap: 8px;
+        }
     }
 
     &__links-element {
