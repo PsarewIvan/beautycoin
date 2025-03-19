@@ -11,13 +11,19 @@ html
         link(rel="stylesheet" href="libs/splide-core.min.css")
         link(rel="stylesheet" href="css/index.css")
     body
-        block header
-            include includes/header.pug
+        if page !== 'popup'
+            block header
+                include includes/header.pug
 
         block content
 
-        block footer
-            include includes/footer.pug
+        if page !== 'popup'
+            block footer
+                include includes/footer.pug
+
+        if page === 'popup'
+            block footer
+                include includes/popup-footer.pug
 
     script(src='libs/splide.min.js')
     script(src="js/index.js")

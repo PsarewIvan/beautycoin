@@ -1,0 +1,22 @@
+include ../icons/icon-ok.pug
+
+mixin checkbox({className='', forceAlert, reg})
+    - var forceClass = forceAlert ? 'checkbox_alert' : ''
+
+    .checkbox-wrapper.popup-auth__checkbox
+        .checkbox(class=forceClass)
+            input(type="checkbox" id='checkbox-access-oferta' name='auth-oferta' checked=false)
+            label.checkbox__label(for='checkbox-access-oferta')
+                +icon-ok('checkbox__icon-ok')
+                if reg
+                    div Я подтверждаю, что ознакомлен с условиями
+                    a(href='/') Пользовательского соглашения
+                    span  и соглашаюсь с 
+                    a(href='/') Правилами использования и обработки персональных данных
+                    .checkbox__alert Необходимо ваше подтверждение
+                else 
+                    div Я подтверждаю, что ознакомлен с условиями
+                    a(href='/') Пользовательского соглашения
+                    span  и 
+                    a(href='/') Оферты
+                    .checkbox__alert Необходимо ваше подтверждение

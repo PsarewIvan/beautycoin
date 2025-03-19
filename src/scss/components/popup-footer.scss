@@ -1,0 +1,63 @@
+@use '../vars.scss';
+
+.popup-footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 56px;
+    padding: 16px 0;
+    background-color: vars.$text-primary;
+
+    &__content {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: baseline;
+        justify-content: space-between;
+        max-width: 1200px;
+        padding: 0 24px;
+        margin: 0 auto;
+    }
+
+    &__copyright {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color: vars.$text-secondary-invert;
+    }
+
+    &__links {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 24px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    &__links-element {
+        position: relative;
+        display: flex;
+        align-items: baseline;
+        padding-left: 24px;
+
+        &::after {
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 11px;
+            width: 16px;
+            height: 2px;
+            border-radius: 10px;
+            background-color: vars.$accent-500;
+        }
+    }
+
+    &__link {
+        color: vars.$text-primary-invert;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 24px;
+        cursor: pointer;
+    }
+}

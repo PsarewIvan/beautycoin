@@ -1,0 +1,109 @@
+@use '../vars.scss';
+
+.main-popup {
+    display: flex;
+    min-height: 100vh;
+    background-image: url('../img/bg-orange.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 64px;
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 32px 24px 88px;
+
+        @include vars.tablet {
+            padding: 32px 24px;
+        }
+
+        @include vars.mobile {
+            padding: 32px 16px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 48px;
+    }
+
+    &__logo {
+        display: flex;
+        width: 241px;
+        height: 40px;
+    }
+
+    &__logo-img {
+        width: 100%;
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 48px;
+        line-height: 58px;
+        font-weight: 900;
+        letter-spacing: -1.92px;
+        color: vars.$text-primary-invert;
+    }
+}
+
+.popup {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 32px 32px 40px;
+    max-width: 544px;
+    width: 100%;
+    background-color: vars.$background-primary;
+
+    &__titles {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 32px;
+        line-height: 44px;
+        font-weight: 900;
+        letter-spacing: -0.96px;
+    }
+
+    &__sub-title {
+        margin: 0;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__link {
+        width: fit-content;
+        font-size: 16px;
+        line-height: 24px;
+        color: vars.$link-500;
+        text-decoration: none;
+    }
+
+    &__inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__captcha {
+        width: 302px;
+        height: 76px;
+    }
+
+    &__apply-button {
+        min-width: 160px;
+    }
+}

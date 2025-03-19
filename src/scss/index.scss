@@ -9,10 +9,13 @@
 @use './components/text-input.scss';
 @use './components/card.scss';
 @use './components/card-low.scss';
+@use './components/checkbox.scss';
+@use './components/popup-footer.scss';
 
 @use './pages/index.scss';
 @use './pages/agreement.scss';
 @use './pages/details.scss';
+@use './pages/popups.scss';
 
 * {
     box-sizing: border-box;

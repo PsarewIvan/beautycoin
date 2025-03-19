@@ -1,0 +1,26 @@
+extends ../layout.pug
+
+block variables
+    - var page = 'popup'
+
+block content
+    include ../components/text-input.pug
+    include ../components/pass-input.pug
+    include ../components/checkbox.pug
+    include ../components/button.pug
+
+    main.main-popup
+        .main-popup__wrapper
+            section.main-popup__content
+                a.main-popup__logo(href="/")
+                    img.main-popup__logo-img(src="img/logo-black.png")
+                h1.main-popup__title Программа лояльности среди поставщиков для салонов красоты
+            section.main-popup__popup.popup
+                .popup__titles
+                    h2.popup__title Забыли пароль?
+                    p.popup__sub-title Укажите номер телефона указанный при регистрации, и мы вышлем вам инструкцию как восстановить доступ
+                .popup__inputs
+                    +text-input({placeholder: 'Ваш номер телефона', className: 'popup__input'})
+                img.popup__captcha(src='img/captcha.png')
+                div
+                    +button({text: 'Отправить', className: 'popup__apply-button'})

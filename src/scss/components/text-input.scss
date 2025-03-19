@@ -101,6 +101,7 @@
     &__alert {
         display: none;
         margin-top: 4px;
+        margin-left: 2px;
         color: vars.$error-500;
         font-size: 14px;
         line-height: 20px;
@@ -126,6 +127,7 @@
 
     &__force-alert {
         margin-top: 4px;
+        margin-left: 2px;
         color: vars.$error-500;
         font-size: 14px;
         line-height: 20px;
