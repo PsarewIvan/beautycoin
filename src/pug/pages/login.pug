@@ -19,11 +19,11 @@ block content
                 .popup__titles
                     h2.popup__title Вход в личный кабинет
                     p.popup__sub-title Новый пользователь? 
-                        a.popup__link(href='/registration.html') Зарегистрируйтесь
+                        a.popup__link(href='registration.html') Зарегистрируйтесь
                 .popup__inputs
                     +text-input({placeholder: 'Ваш номер телефона', className: 'popup__input'})
                     +pass-input({placeholder: 'Пароль', className: 'popup__input'})
-                    a.popup__link(href='/forgot-pass.html') Забыли пароль?
+                    a.popup__link(href='forgot-pass.html') Забыли пароль?
                 +checkbox({})
                 img.popup__captcha(src='img/captcha.png')
                 div
