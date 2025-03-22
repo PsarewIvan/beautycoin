@@ -1,13 +1,13 @@
 block header
     include ../components/button.pug
 
-    - var spendLink = page === 'index' ? '#spend' : '/#spend'
-    - var getLink = page === 'index' ? '#get' : '/#get'
-    - var questionLink = page === 'index' ? '#questions' : '/#questions'
+    - var spendLink = page === 'index' ? '#spend' : '#spend'
+    - var getLink = page === 'index' ? '#get' : '#get'
+    - var questionLink = page === 'index' ? '#questions' : '#questions'
 
     header.header(class=headerClass)
         .header__content
-            a.header__logo(href='./')
+            a.header__logo(href='#')
                 img.header__logo-img(src='img/logo.png')
             if page != 'integration'
                 ul.header__links
