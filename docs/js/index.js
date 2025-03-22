@@ -157,8 +157,6 @@ class ItcAccordion {
         });
 
         input?.addEventListener('blur', (event) => {
-            console.log('[blur]', alert);
-
             if (event.target.value === '') {
                 alert?.classList.add(ACTIVE_CLASS);
             } else {
